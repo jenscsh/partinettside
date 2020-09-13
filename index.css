@@ -1,8 +1,26 @@
+* {
+    margin: 0;
+}
+main {
+    background-image: url(./images/leder.jpg);
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 h1 {
     text-align-last: center;
-    margin-top: 50vh;
+    padding-top: 40vh;
+    padding-bottom: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .buttons {
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 350px;
+    margin: auto;
+}
+button {
+    width: 150px;
+    height: 70px;
+    font-size: 25px;
 }
