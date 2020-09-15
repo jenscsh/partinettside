@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 main {
     background-image: url(./images/leder.jpg);
@@ -9,21 +9,24 @@ main {
     background-size: cover;
     display: block;
     height: 100vh;
+    filter: blur(4px);
+    transition: 1s;
+    filter: blur(0px);
 }
 h1 {
     font-size: 50px;
     color: red;
-    padding-top: 40vh;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    padding: 5px;
     width: 500px;
-    margin-left: 200px;
+    margin-right: 0;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 .buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 350px;
-    margin: auto;
-    margin-left: 200px;
+    margin-right: 0;
 }
 button {
     border: none;
@@ -32,22 +35,28 @@ button {
     height: 70px;
     font-size: 25px;
 }
+#showcase {
+    position: absolute;
+    top: 40vh;
+    left: 10vw;
+}
 .header {
-    background-color: rgba(0, 255, 0, 0.2);
+    display: flex;
+    background-color: rgba(100, 255, 100, 0.2);
     position: fixed;
     width: 100%;
+    justify-content: space-between;
 }
 nav {
-    display: grid;
+    display: inline-grid;
     gap: 10px;
     grid-auto-flow: column;
     justify-content: end;
-    margin: 0 20px;
 }
 nav a {
-    color: black;
+    color: darkred;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px;
 }
 #logo {
