@@ -33,12 +33,16 @@ nav a {
     width: 100%;
     margin-bottom: -50px;
 }
+.skjema {
+    background-color: white;
+}
 form {
     width: 300px;
     margin: auto;
     background-color: white;
     z-index: 1;
     padding: 0 100px;
+    box-shadow: 0 0 5px black;
 }
 h1 {
     color: white;

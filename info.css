@@ -33,32 +33,47 @@ main {
     margin-top: 100px;
 }
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 200px;
     color: rgb(70, 70, 70);
+    font-size: 45px;
 }
 .sak {
-    width: 30em;
-    height: 30em;
-    min-width: 25em;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    min-width: 300px;
+    font-size: 40px;
     background-color: black;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    justify-content: center;
+    align-items: flex-end;
+    filter: grayscale(50%) contrast(120%);
     transition: 0.2s;
     border: 1px solid gray;
     text-align: center;
-    color: rgb(70, 70, 70);
+    color: salmon;
+    text-decoration: none;
 }
 .sak:hover {
     transform: scale(1.2);
     z-index: 1;
+    filter: grayscale(0%); 
+    /* color: rgba(0, 0, 0, 0); */
+    color: red;
 }
 .oversikt {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 200px;
+    margin: 10px 200px;
+    gap: 5px;
 }
 .sak:nth-child(1) {background-image: url(./images/klima.jpg);}
 .sak:nth-child(2) {background-image: url(./images/likestilling.jpg);}
+.sak:nth-child(3) {background-image: url(./images/inkludering.jpg);}
+.sak:nth-child(4) {background-image: url(./images/flyktning.jpg);}
+.sak:nth-child(5) {background-image: url(./images/fred.jpg);}
+.sak:nth-child(6) {background-image: url(./images/arbeider.jpg);}
